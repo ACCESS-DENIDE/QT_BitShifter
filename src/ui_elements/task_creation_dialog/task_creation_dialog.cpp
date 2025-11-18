@@ -23,7 +23,7 @@ void ACD::TaskCreationDialog::SetupUi()
     restart_timer_sb=new QSpinBox(this);
     restart_timer_sb->setRange(-1, 86400000);
     restart_timer_sb->setValue(-1);
-    form_layout->addRow("Restart delay (msec): ", restart_timer_sb);
+    form_layout->addRow("Restart delay (msec)\n[-1 - no restarts]: ", restart_timer_sb);
 
     mask_le=new QLineEdit(this);
     mask_le->setPlaceholderText("Mask");
